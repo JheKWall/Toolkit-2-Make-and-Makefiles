@@ -17,9 +17,9 @@ CC = g++
 CFLAGS = -g -Wall -Wextra
 
 ## Target Flag variable
-# Defines name of output to "employee" and contains all targets to fully compile.
+# Contains all targets to fully compile.
 # !! If adding more methods, implement them in methods and add them here so they are compiled. !!
-TARGET = -o employee main.o Employee.o Officer.o Supervisor.o
+TARGET = main.o Employee.o Officer.o Supervisor.o
 
 ## Remove Flag variable
 RM = rm -i
@@ -32,9 +32,10 @@ RM = rm -i
 default: all
 
 ## all
-# Using $(TARGET) it will link all object (*.o) files into an executable called "all".
+# Using $(TARGET) it will link all object (*.o) files.
+# Defines name of output to "employee".
 all: $(TARGET)
-	$(CC) $(CFLAGS) $(TARGET)
+	$(CC) $(CFLAGS) $(TARGET) -o employee 
 
 ## main.o
 # Requires main.cpp and all header files.

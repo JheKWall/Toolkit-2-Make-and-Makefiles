@@ -33,7 +33,7 @@ default: all
 
 ## all
 # Using $(TARGET) it will link all object (*.o) files into an executable called "all".
-all:
+all: $(TARGET)
 	$(CC) $(CFLAGS) $(TARGET)
 
 ## main.o

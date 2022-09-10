@@ -18,17 +18,17 @@ CFLAGS = -g -Wall -Wextra
 
 ## Target Flag variable
 # Contains all targets to fully compile.
-# !! If adding more methods, implement them in methods and add them here so they are compiled. !!
+# !! If adding more targets, implement them in targets and add them here so they are compiled. !!
 TARGET = main.o Employee.o Officer.o Supervisor.o
 
 ## Remove Flag variable
 RM = rm -i
 
 
-### METHODS
+### TARGETS
 
 ## Default entry
-# Sets the default method to be called when typing 'make'.
+# Sets the default target to be called when typing 'make'.
 default: all
 
 ## all

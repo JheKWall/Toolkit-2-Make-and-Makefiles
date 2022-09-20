@@ -24,8 +24,6 @@ TARGET = employee
 ### TARGETS
 
 ## all
-# Calls upon $(TARGET)
-
 # Using $(TARGET) it will link all object (*.o) files.
 # Defines name of output to "employee".
 all: 	$(TARGET)
